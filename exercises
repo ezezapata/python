@@ -1,0 +1,20 @@
+  #Create a function that receives a list of numbers and prints the the bigger between they.
+  For example if you provide this list: [4,6,7,8,10], the function should prints 10.
+
+  I let my answer (It not means that is the best code) here below but before that you read it 
+try to create your own solution.
+
+def return_max(a):
+	list_num = a;
+	if len(list_num) == 1:
+		print list_num.pop(0);
+	else:
+		for x in range(0, len(list_num)-1):
+			if list_num[x] > list_num[x+1]:
+				del list_num[x+1];
+				return return_max(list_num);
+			else:
+				del list_num[x];
+				return return_max(list_num);
+	
+more_max([4,6,7,8,10]);
