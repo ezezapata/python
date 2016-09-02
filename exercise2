@@ -1,4 +1,4 @@
-#In this case we have to create a function that print a given string without vowels.
+#In this case we have to create a function that print a given string without it's vowels.
 
 def sliceString(string):
 	vowels = ["a","e","i","o","u","A","E","I","O","U"]
