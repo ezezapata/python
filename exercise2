@@ -1,0 +1,10 @@
+#In this case we have to create a function that print a given string without vowels.
+
+def sliceString(string):
+	vowels = ["a","e","i","o","u","A","E","I","O","U"]
+	newList = (list(string))
+	for x in newList:
+		if x in vowels:
+			newList.remove(x)
+	print("".join(newList))
+sliceString('hello how are you')
