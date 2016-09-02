@@ -1,0 +1,12 @@
+#Now you have to create a function that compare two list and return a new list which contains the elements that are repeated in both lists
+
+def listOverlap():
+	listA = [7,3,3,6,7,8,9,7,6,4]
+	listB = [1,2,3,3,7,6,7]
+	newList = []
+	for i in listA:
+		for j in listB:
+			if j == i and j not in newList:
+				newList.append(j)
+	print(newList)
+listOverlap()
