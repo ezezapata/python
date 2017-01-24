@@ -1,6 +1,9 @@
 import random
 
 def naval():
+    """
+        This function create the game Naval Battle.
+    """
     # This is the matrix where the ship will be hidden.
     matrix = []
 
